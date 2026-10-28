@@ -1,0 +1,90 @@
+/* Jetons de design UNBOUND : couleurs, typographie, espacements.
+   Clair par défaut, sombre selon le système ou via data-theme sur <html>. */
+:root {
+  /* Palette de marque */
+  --charcoal: #1e1e1e;
+  --ivory: #f3efe9;
+  --stone: #a7a79f;
+  --sage: #556b5d;
+  --sand: #d9d2c6;
+  --terracotta: #c8754a;
+
+  /* Rôles (thème clair) */
+  --color-bg: var(--ivory);
+  --color-surface: #fbf9f5;
+  --color-surface-2: #ece6dc;
+  --color-text: var(--charcoal);
+  --color-text-muted: #5f5f58;
+  --color-line: #d9d2c6;
+  --color-line-strong: #b8b0a2;
+  --color-accent: var(--sage);
+  --color-accent-text: #ffffff;
+  --color-route: var(--terracotta);
+  --color-route-text: #9a4f29;
+  --color-contour: #cfc6b6;
+  --color-focus: #3d5a49;
+
+  /* Typographie */
+  --font-display: 'Sora Variable', 'Sora', system-ui, sans-serif;
+  --font-body: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.5rem;
+  --tracking-label: 0.14em;
+
+  /* Espacements et formes */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 72px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --page-max: 1080px;
+
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --color-bg: #161615;
+    --color-surface: var(--charcoal);
+    --color-surface-2: #2a2a27;
+    --color-text: var(--ivory);
+    --color-text-muted: #a7a79f;
+    --color-line: #34342f;
+    --color-line-strong: #4a4a44;
+    --color-accent: #7f9a88;
+    --color-accent-text: #121412;
+    --color-route: #d98a60;
+    --color-route-text: #e3a07c;
+    --color-contour: #3a3a35;
+    --color-focus: #a9c2b1;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --color-bg: #161615;
+  --color-surface: var(--charcoal);
+  --color-surface-2: #2a2a27;
+  --color-text: var(--ivory);
+  --color-text-muted: #a7a79f;
+  --color-line: #34342f;
+  --color-line-strong: #4a4a44;
+  --color-accent: #7f9a88;
+  --color-accent-text: #121412;
+  --color-route: #d98a60;
+  --color-route-text: #e3a07c;
+  --color-contour: #3a3a35;
+  --color-focus: #a9c2b1;
+  color-scheme: dark;
+}
