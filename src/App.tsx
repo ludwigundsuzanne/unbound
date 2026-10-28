@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <img src="/logo-snow.svg" alt="UNBOUND" className="logo" />
+        <span className="logo">UNBOUND</span>
       </header>
       <main className="app-main">
         <h1>Prépare ta prochaine expédition.</h1>

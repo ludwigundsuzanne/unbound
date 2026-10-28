@@ -10,9 +10,11 @@
 }
 
 .logo {
-  height: 28px;
-  width: auto;
-  display: block;
+  /* Nom provisoire, en attendant le logo définitif. */
+  color: var(--neve);
+  font-weight: 800;
+  font-size: 22px;
+  letter-spacing: 0.12em;
 }
 
 .app-main {
